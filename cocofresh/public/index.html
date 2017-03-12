@@ -131,7 +131,7 @@
     .jssora22r:hover { background-position: -190px -31px; }
     .jssora22l.jssora22ldn { background-position: -250px -31px; }
     .jssora22r.jssora22rdn { background-position: -310px -31px; }
-    .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+    .jssora22l.jssora22lds { background-position: -10px -31px; opacityfeatures: .3; pointer-events: none; }
     .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
 
     @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
@@ -376,7 +376,7 @@ left: 35%;
             <li><a class="page-scroll" href="#main">Home</a></li>
             <li><a class="page-scroll" href="#features">Product</a></li>
             <li><a class="page-scroll" href="#review-section">Our Story</a></li>
-            <li><a class="page-scroll" href="#review-section"> Order Now</a></li>
+            <li><a class="page-scroll" href="#ordernow"> Order Now</a></li>
             <li><a class="page-scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -403,9 +403,10 @@ left: 35%;
                   <div style="position:absolute;top:60px;left:-15px;width:570px;height:40px;z-index:0;font-size:22px;color:#ffffff;line-height:38px;"></div>
               </div>
               <div style="position:absolute;top:370px;left:-250px;width:700px;height:120px;z-index:0;background-color:rgba(0,0,0,0);">
-                  <div style="position:absolute;top:80px;left:680px;width:600px;height:40px;z-index:0;font-size:30px;color:#000000;line-height:40px;">
-                    <p style="font-family: 'Playfair Display';     font-style: italic; color: green;">Cocofresh makes you fresh and healthy!</p>
-                    <div>  <p style="font-family: 'Playfair Display';     font-style: italic; color: green;">Cocofresh makes you happy and wealthy!</p>
+                  <div style="position:absolute;top:80px;left:750px;width:600px;height:40px;z-index:0;font-size:30px;color:#000000;line-height:40px;">
+                    <p style="font-family: 'Playfair Display';     font-style: italic; color: rgba(0,0,0,0.7);">Taste the purest coconut water,
+</p>
+                    <div>  <p style="font-family: 'Playfair Display'; margin-left: 60px;     font-style: italic; color: rgba(0,0,0,0.7)">packed in its own fruit</p>
                     </div>
                   </div>
                   <div style="position:absolute;top:60px;left:15px;width:500px;height:40px;z-index:0;font-size:22px;color:#000000;line-height:38px;"></div>
@@ -547,7 +548,7 @@ Get delivered in your doorstep  </p>
           <img src="./img/4.png" height="100">
             <div class="pitch-content">
               <h1>Delivery at your location</h1>
-              <p> Coco Easy's farm-to-door delivery makes certain that you get your coconut water at its peak ripeness, fresh and full of flavor.</p>
+              <p> Our farm-to-door delivery makes certain that you get your coconut water at its peak ripeness, fresh and full of flavor.</p>
             </div>
           </div>
           <div class="col-md-3 wow fadeInDown" data-wow-delay="0.2s">
@@ -565,137 +566,134 @@ chop off the top at home and stick in a straw. </p>
     <div id="pricing" class="pricing-section text-center">
       <div class="container">
         <div class="col-md-12 col-sm-12 nopadding">
-          <div class="pricing-intro">
-            <h1 class="wow fadeInUp" data-wow-delay="0s">Easy Pricing Plans</h1>
-            <p class="wow fadeInUp" data-wow-delay="0.2s"> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis <br class="hidden-xs">tempore consequuntur officia ducimus unde doloribus quod unt repell </p>
+          <div class="pricing-intro" id="ordernow">
+            <h1 class="wow fadeInUp" data-wow-delay="0s">Coco Subscription Plans</h1>
+            <p class="wow fadeInUp" data-wow-delay="0.2s"> We’ll delivery box of tasty drinking coconuts to your door,  <br class="hidden-xs">with fresh coconut flesh completely unpasteurised straight from the tree to you.</p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <div class="table-left wow fadeInUp" data-wow-delay="0.4s">
-              <div class="icon"> <i class="ion-ios-paperplane-outline"></i> </div>
+<img src="./img/packed.png" height="100" style="margin-bottom: 50px" >
               <div class="pricing-details">
-                <h2>Starter Plan</h2>
-                <span>Free</span>
+                <h2> Case of 4</h2>
+                <span>&#8377; 100</span>
                 <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                </ul>
+                  <li >We deliver a case of 4</li>
+                  <li > straight from the tree </li>
+                  <li> to your home/shop</li>
+                 </ul>
                 <button class="btn btn-primary btn-action btn-fill">Get Plan</button>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="table-right table-center wow fadeInUp" data-wow-delay="0.6s">
-              <div class="icon"> <i class="ion-ios-analytics-outline"></i> </div>
-              <div class="pricing-details">
-                <h2>Popular Plan</h2>
-                <span>$3.99</span>
-
-                <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                </ul>
-                <button class="btn btn-primary btn-action btn-fill">Buy Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <div class="table-right wow fadeInUp" data-wow-delay="0.6s">
-              <div class="icon"> <i class="ion-ios-color-wand-outline"></i> </div>
+              <img src="./img/packed.png" height="100" style="margin-bottom: 50px">
               <div class="pricing-details">
-                <h2>Premium Plan</h2>
-                <span>$9.50</span>
+                <h2> Case of 6</h2>
+                <span>&#8377; 150</span>
                 <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                </ul>
+                  <li >We deliver a case of 6</li>
+                  <li > straight from the tree </li>
+                  <li> to your home/shop</li>
+                 </ul>
                 <button class="btn btn-primary btn-action btn-fill">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="table-right wow fadeInUp" data-wow-delay="0.6s">
+              <img src="./img/packed.png" height="100" style="margin-bottom: 50px">
+              <div class="pricing-details">
+                <h2> Case of 9</h2>
+                <span>&#8377; 200</span>
+                <ul>
+                  <li >We deliver a case of 9</li>
+                  <li > straight from the tree </li>
+                  <li> to your home/shop</li>
+                 </ul>
+                <button class="btn btn-primary btn-action btn-fill">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="table-right wow fadeInUp" data-wow-delay="0.6s">
+              <img src="./img/packed.png" height="100" style="margin-bottom: 50px">
+              <div class="pricing-details">
+                <h2>Bulk Order</h2>
+                <span>&#8377; &#8377; &#8377; </span>
+                <ul>
+                  <li > wholesale for your shop</li>
+  <li > and  functions  </li>
+  <li>please contact us </li>
+                 </ul>
+              <a href="mailto:order@naturebowl.in?Subject=Hello%20again" target="_top"><button class="btn btn-primary btn-action btn-fill" >Contact us</button></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Subscribe Form -->
-    <div class="cta-sub no-color">
-      <div class="container">
-        <div class="cta-inner">
-          <h1 class="wow fadeInUp" data-wow-delay="0s">Sign Up to Our Newsletter and get exciting offers</h1>
-          <p class="wow fadeInUp" data-wow-delay="0.2s"> Enter your email address we promise, never disclose<br class="hidden-xs">
-             or sell your email address. </p>
-          <div class="form wow fadeInUp" data-wow-delay="0.3s">
-            <form class="subscribe-form center-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
-              <input class="mail" type="email" name="email" placeholder="Join the wait list" autocomplete="off" id="subemail">
-              <input class="submit-button" type="submit" value="Order Now" name="send" id="subsubmit">
-            </form>
-              <!-- subscribe message -->
-        <div id="mesaj"></div>
-        <!-- subscribe message -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
 
 
 
     <!-- Footer Section -->
-    <footer>
+    <footer style="background-color: '#fff'">
         <div class="footer" id="footer">
             <div class="container">
                 <div class="row">
-                    <div class=" col-md-3 ">
-                        <h3> <img src="./images/logo.png" > </h3>
+                    <div class=" col-md-4 ">
+                         <img src="./images/logo.png"  style="border-bottom: none">
+
+
 
                     </div>
-                    <div class="  col-md-3">
-                        <h3> Contact Us </h3>
-                        <ul>
-                            <li> <a href="#">23 A-1, </a> </li>
-                            <li> <a href="#"> Avinashi Road</a> </li>
-                            <li> <a href="#"> Coimbatore</a> </li>
-                            <li> <a href="#"> Tamilnadu</a> </li>
-                            <li> <a href="#"> India</a> </li>
+                    <div class="  col-md-4">
+                        <h3 style="color: green"> Contact Us </h3>
+                        <div class="row" style="text-align: left">
+                          <div class="col">
+<!--
+Nature bowl Inc
+Coimbatore ,641 004
 
-                        </ul>
+
+
+
+
+-->
+                          </div>
+                            <div class="col">
+                              <ul>
+                                  <li> <span><i class="fa fa-address"></i></span><a href="#" >Nature bowl Inc
+                                  Coimbatore ,641 004  </a> </li>
+                                  <li><span></span> <a href="#">
+                                  +91 9791923656</a> </li>
+                                  <li> <span></span><a href="#"> contact@naturebowl.in</a> </li>
+                                  <li> <span></span><a href="#"> www.naturebowl.in</a> </li>
+                                  <li> <span></span><a href="#"></a> </li>
+
+                              </ul>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class=" col-md-3 ">
-                        <h3> Lorem Ipsum </h3>
+
+                    <div class=" col-md-4  ">
+                        <h3 style="color: green">Follow us </h3>
                         <ul>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                          <ul class="social" style="margin-left: 60px">
+
+
+
+                              <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                              <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                              <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+
+                              <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+
+                          </ul>
                         </ul>
-                    </div>
-                    <div class=" col-md-3  ">
-                        <h3> Connect us </h3>
-                        <ul>
-                            <li>
-                                <!-- <div class="input-append newsletter-box text-center">
-                                    <input type="text" class="full text-center" placeholder="Email ">
-                                    <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
-                                </div> -->
-                            </li>
-                        </ul>
-                        <ul class="social">
-                            <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
-                        </ul>
+
                     </div>
                 </div>
                 <!--/.row-->
