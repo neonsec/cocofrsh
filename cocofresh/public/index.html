@@ -133,6 +133,231 @@
     .jssora22r.jssora22rdn { background-position: -310px -31px; }
     .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
     .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+
+    @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+/* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
+.board{
+    width: 75%;
+margin: 60px auto;
+height: 500px;
+background: #fff;
+/*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+}
+.board .nav-tabs {
+    position: relative;
+    /* border-bottom: 0; */
+    /* width: 80%; */
+    margin: 40px auto;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+}
+
+.board > div.board-inner{
+    background: #fafafa url(http://subtlepatterns.com/patterns/geometry2.png);
+    background-size: 30%;
+}
+
+p.narrow{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.liner{
+    height: 2px;
+    background: #ddd;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    /* background-color: #ffffff; */
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tabs{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+span.round-tabs.one{
+    color: rgb(34, 194, 34);border: 2px solid rgb(34, 194, 34);
+}
+
+li.active span.round-tabs.one{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: rgb(34, 194, 34);
+}
+
+span.round-tabs.two{
+    color: #febe29;border: 2px solid #febe29;
+}
+
+li.active span.round-tabs.two{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #febe29;
+}
+
+span.round-tabs.three{
+    color: #3e5e9a;border: 2px solid #3e5e9a;
+}
+
+li.active span.round-tabs.three{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #3e5e9a;
+}
+
+span.round-tabs.four{
+    color: #f1685e;border: 2px solid #f1685e;
+}
+
+li.active span.round-tabs.four{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #f1685e;
+}
+
+span.round-tabs.five{
+    color: #999;border: 2px solid #999;
+}
+
+li.active span.round-tabs.five{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #999;
+}
+
+.nav-tabs > li.active > a span.round-tabs{
+    background: #fafafa;
+}
+.nav-tabs > li {
+    width: 20%;
+}
+/*li.active:before {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    opacity:0;
+    margin: 0 auto;
+    bottom: -2px;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 1;
+    transition:0.2s ease-in-out;
+}*/
+li:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+   opacity:0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #ddd;
+    transition:0.1s ease-in-out;
+
+}
+li.active:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+   opacity:1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #ddd;
+
+}
+.nav-tabs > li a{
+   width: 70px;
+   height: 70px;
+   margin: 20px auto;
+   border-radius: 100%;
+   padding: 0;
+}
+
+.nav-tabs > li a:hover{
+    background: transparent;
+}
+
+.tab-content{
+}
+.tab-pane{
+   position: relative;
+padding-top: 50px;
+}
+.tab-content .head{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.btn-outline-rounded{
+    padding: 10px 40px;
+    margin: 20px 0;
+    border: 2px solid transparent;
+    border-radius: 25px;
+}
+
+.btn.green{
+    background-color:#5cb85c;
+    /*border: 2px solid #5cb85c;*/
+    color: #ffffff;
+}
+
+
+
+@media( max-width : 585px ){
+
+    .board {
+width: 90%;
+height:auto !important;
+}
+    span.round-tabs {
+        font-size:16px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+    }
+    .tab-content .head{
+        font-size:20px;
+        }
+    .nav-tabs > li a {
+width: 50px;
+height: 50px;
+line-height:50px;
+}
+
+li.active:after {
+content: " ";
+position: absolute;
+left: 35%;
+}
+
+.btn-outline-rounded {
+    padding:12px 20px;
+    }
+}
 </style>
 
 </head>
@@ -233,52 +458,55 @@
     <div class="app-features text-center" id="features">
       <div class="container">
         <h1 class="wow fadeInDown" data-wow-delay="0.1s">Why Cocofresh? </h1>
-        <p class="wow fadeInDown" data-wow-delay="0.2s"> Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est,<br class="hidden-xs">
-          convallis nec purus vitae, iaculis posuere sapien. </p>
+        <p class="wow fadeInDown" data-wow-delay="0.2s"> We believe that fresh coconut water deserves to be treated with respect, as do you.
+
+<br class="hidden-xs">We source the best fresh coconuts from pollachi, and deliver them to you, simple as that
+          </p>
         <div class="col-md-4 features-left">
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
             <div class="icon"> <i class="fa fa-leaf"></i> </div>
             <div class="feature-single">
               <h1>100% Natural</h1>
-              <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
+              <p> Cocofresh has no added sugar, no additives, and no preservatives or artificial colours, sweeteners or other added nasties. </p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.3s">
-            <div class="icon"> <i class="fa fa-pagelines"></i> </div>
+            <div class="icon"> <img src="img/hand.png" height="100"/>  </div>
             <div class="feature-single">
               <h1>Handpicked Coconuts</h1>
-              <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
+              <p> We use only the freshest young, green coconuts handpicked at premium ripeness. </p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
-            <div class="icon"> <i class="fa fa-car"></i> </div>
+            <div class="icon"><img src="img/Picture4.png" height="100"/> </div>
             <div class="feature-single">
-              <h1>Free Delivery</h1>
-              <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
+              <h1>EASY TO open & STORE</h1>
+              <p>
+Its can easily store in anyplace and easily open and drink the tasty coconut water inside! </p>
             </div>
           </div>
         </div>
         <div class="col-md-4 wow fadeInDown" data-wow-delay="0.5s"> <img class="img-responsive" src="images/coco_main.png" height="600px" alt="App" /> </div>
         <div class="col-md-4 features-left">
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
-            <div class="icon"> <i class="fa fa-mobile fa-5" ></i> </div>
+            <div class="icon"> <i class="fa fa-pagelines fa-6" ></i> </div>
             <div class="feature-single">
-              <h1>Shop Easily </h1>
-              <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
+              <h1>Always Fresh </h1>
+              <p>We pride ourselves on quality and freshness. We source our coconuts from pollachi  where we believe the best tasting coconuts come from </p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
-            <div class="icon"> <i class="fa fa-shopping-bag"></i> </div>
+            <div class="icon"> <img src="img/packed.png" height="100"/>  </div>
             <div class="feature-single">
-              <h1>Easy to Store & Use</h1>
-              <p> Some lorem contetnt to fill the gap and make it look clean and organized. </p>
+              <h1>Packed by nature</h1>
+              <p>Mother Nature is one of the best designers around.coconut is one such kind,we are delivering this beautiful design without any modification </p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.8s">
-            <div class="icon"> <i class="fa fa-shopping-cart"></i> </div>
+            <div class="icon"><i class="fa fa-mobile fa-6" aria-hidden="true" style="font-size: 150px;"></i> </div>
             <div class="feature-single">
-              <h1>Custom Order</h1>
-              <p> ok clean and organized. </p>
+              <h1>SHOP EASILY</h1>
+              <p> Our mobile app help you to choose the package based on your need and we deliver from nature to you doorstep easily   </p>
             </div>
           </div>
         </div>
@@ -330,56 +558,7 @@
         </div>
       </div>
     </div>
-    <div class="feature-sub">
-      <div class="container">
-        <div class="sub-inner">
-          <h1 class="wow fadeInUp">Creative Landing App For Your Easy Life! Simple Reliable & Understandable for your customers </h1>
-          <a href="#" class="btn btn-action wow fadeInUp">Buy now</a> </div>
-      </div>
-    </div>
-    <div id="review-section" class="review-section">
-      <div class="container">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="reviews owl-carousel owl-theme">
-            <div class="review-single"><img class="img-circle" src="images/customer1.png" alt="Client Testimonoal" />
-              <div class="review-text wow fadeInUp" data-wow-delay="0.2s">
-                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                <h3>Johnathan Doe</h3>
-                <h3>Marketing Head Matrix media</h3>
-              </div>
-            </div>
-            <div class="review-single"><img class="img-circle" src="images/customer2.png" alt="Client Testimonoal" />
-              <div class="review-text">
-                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                <h3>Oidila Matik</h3>
-                <h3>President Lexo Inc</h3>
-              </div>
-            </div>
-            <div class="review-single"><img class="img-circle" src="images/customer3.png" alt="Client Testimonoal" />
-              <div class="review-text">
-                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                <h3>- Alex Dattilo</h3>
-                <h3>CEO Optima Inc</h3>
-              </div>
-            </div>
-            <div class="review-single"><img class="img-circle" src="images/customer4.png" alt="Client Testimonoal" />
-              <div class="review-text">
-                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                <h3>- Robert Hammer</h3>
-                <h3>design head Omega Corp</h3>
-              </div>
-            </div>
-            <div class="review-single"><img class="img-circle" src="images/customer5.png" alt="Client Testimonoal" />
-              <div class="review-text">
-                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                <h3>- Rita Valentine</h3>
-                <h3>CEO Behena digital</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div id="pricing" class="pricing-section text-center">
       <div class="container">
         <div class="col-md-12 col-sm-12 nopadding">
@@ -450,7 +629,7 @@
           <div class="form wow fadeInUp" data-wow-delay="0.3s">
             <form class="subscribe-form center-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
               <input class="mail" type="email" name="email" placeholder="Join the wait list" autocomplete="off" id="subemail">
-              <input class="submit-button" type="submit" value="Subscribe" name="send" id="subsubmit">
+              <input class="submit-button" type="submit" value="Order Now" name="send" id="subsubmit">
             </form>
               <!-- subscribe message -->
         <div id="mesaj"></div>
@@ -460,21 +639,30 @@
       </div>
     </div>
 
+
+
+
+
+
+
+
     <!-- Footer Section -->
     <div class="footer">
       <div class="container">
-        <div class="col-md-7"> <img src="images/logo.png" width="80" height="30" alt="Image" />
+        <div class="col-md-4"> <img src="images/logo.png" width="80" height="30" alt="Image" />
           <p> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis
 tempore consequuntur officia ducimus unde doloribus quod unt repell  </p>
           <div class="footer-text">
             <p> Copyright © 2016 iLand. All Rights Reserved. Made with <i class="ion-heart"></i> by <a href="http://www.designstub.com/">Designstub</a></p>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4">
             <h1>Contact Us</h1>
             <p> Contact our 24/7 customer support if you have any <br class="hidden-xs">
               questions. We'll help you out. </p>
             <a href="mailto:support@gmail.com">contact@iland.com</a> </div>
+            <div class="col-md-4">
+            </div> 
         </div>
       </div>
     </div>
@@ -487,7 +675,7 @@ tempore consequuntur officia ducimus unde doloribus quod unt repell  </p>
 
   </div>
   <!-- Main Section -->
-</div>
+
 <!-- Wrapper-->
 
 <!-- Jquery and Js Plugins -->
