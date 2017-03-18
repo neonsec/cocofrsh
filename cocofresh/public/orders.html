@@ -13,7 +13,7 @@
 	<!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/paper-bootstrap-wizard.css" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link href="assets/css/demo.css" rel="stylesheet" />
 	<link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
@@ -21,6 +21,33 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 	<link href="assets/css/themify-icons.css" rel="stylesheet">
+	<script type="text/javascript">
+	window.onload = function() {
+
+	var ex1 = document.getElementById('radioButton');
+
+
+	ex1.onclick = handler;
+
+
+}
+
+function handler() {
+	alert('clicked');
+}
+function pickRadio(){
+	document.getElementById("radioButton").checked = true;
+	document.getElementById("icon2").style.color = 'green';
+	// document.getElementById("icon1").style.color = '';
+
+
+}
+// function pickRadio2(){
+// 	document.getElementById("radioButton2").checked = true;
+// 	document.getElementById("icon1").style.color = 'green';
+// 	document.getElementById("icon2").style.color = '';
+// }
+</script>
 </head>
 
 <body>
@@ -31,12 +58,12 @@
 	            <!-- <div class="logo"> -->
 
 	            <!-- </div> -->
-	            <div class="brand"  style="background-color: rgba(0,0,0,0.5); padding-right: 140px; border-radius: 50%">
+	            <!-- <div class="brand"  style="background-color: rgba(0,0,0,0.5); padding-right: 140px; border-radius: 50%">
 								<span>
 								 <img src="./images/logo.png" height="100">
 
 								</span>
-	            </div>
+	            </div> -->
 	        </div>
 	    </a>
 
@@ -54,11 +81,11 @@
 		            <!--      Wizard container        -->
 		            <div class="wizard-container">
 		                <div class="card wizard-card" data-color="green" id="wizard">
-		                <form action="" method="">
+		                <form action="/order" method="POST">
 		                <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
 
 		                    	<div class="wizard-header">
-		                        	<img src="./images/logo.png" height="100" class="category" >
+		                        	<!-- <img src="./images/logo.png" height="100" class="category" > -->
 
 		                    	</div>
 								<div class="wizard-navigation">
@@ -71,7 +98,7 @@
 												<div class="icon-circle">
 													<i class="ti-map"></i>
 												</div>
-												Location
+												Type
 											</a>
 										</li>
 			                            <li>
@@ -103,7 +130,61 @@
 		                        <div class="tab-content">
 		                            <div class="tab-pane" id="location">
 		                            	<div class="row">
-		                                	<div class="col-sm-12">
+																		<div class="col-sm-8 col-sm-offset-2">
+																			<div class="form-group">
+																					<label>Location</label>
+
+																		<select class="form-control">
+																		  <option>Coimbatore</option>
+																		  <option>Chennai</option>
+																		  <option>Bangalore</option>
+																			<option>Cochin</option>
+																		</select>
+																					<!-- <input list="locations" name="location" class="form-control" >
+																					<datalist id="locations" >
+																						<option value="Coimbatore">
+																						<option value="Chennai">
+																						<option value="Bangalore">
+																						<option value="Hyderabad">
+																						<option value="Kochi">
+																					</datalist> -->
+																			</div>
+																		</div>
+
+																				<div class="col-sm-4 col-sm-offset-2">
+											<!-- <div class="choice" data-toggle="wizard-checkbox"> -->
+
+																								<div class="card card-radios card-hover-effect" onclick="pickRadio()">
+																										<!-- <i class="ti-home"></i> -->
+
+																											<i class="material-icons dp48" style="font-size: 5em;" id="icon2">store</i>
+																											<input type="radio" name="jobb" value="shop" id="radioButton">
+																									<p> Store </p>
+																										<!-- <img src="http://naturebowl.in/img/packed.png" height="70"> -->
+													<!-- <p>Rs 100</p>
+													<p>Case of 4</p> -->
+
+																								</div>
+																						<!-- </div> -->
+																				</div>
+																				<div class="col-sm-4">
+											<!-- <div class="choice" data-toggle="wizard-checkbox"> -->
+
+																								<div class="card card-radios card-hover-effect" onclick="pickRadio2()">
+
+																									<i class="material-icons" style="font-size: 5em; color: rgba(0,0,0,0.1)" id="icon1">assignment_ind</i>
+																									<!-- <input type="radio" name="jobb" value="shop" id="radioButton2"> -->
+																									<p> Individual (Coming soon) </p>
+
+																									<!-- <p>Rs 150</p>
+																									<p>Case of 6</p> -->
+																								</div>
+
+																				</div>
+
+
+
+		                                	<!-- <div class="col-sm-12">
 		                                    	<h5 class="info-text"> Let's start with the basic details</h5>
 		                            		</div>
 		                                	<div class="col-sm-5 col-sm-offset-1">
@@ -139,60 +220,112 @@
 																							<label>Email ID</label>
 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email">
 																					</div>
-																			</div>
+																			</div> -->
 		                            	</div>
 		                            </div>
 		                            <div class="tab-pane" id="type">
-		                                <h5 class="info-text">Choose your pack </h5>
-		                                <div class="row">
-		                                    <div class="col-sm-8 col-sm-offset-2">
-		                                        <div class="col-sm-4 col-sm-offset-2">
-													<div class="choice" data-toggle="wizard-checkbox">
-		                                                <input type="checkbox" name="jobb" value="Design">
-		                                                <div class="card card-checkboxes card-hover-effect">
-		                                                    <!-- <i class="ti-home"></i> -->
-																												<img src="http://naturebowl.in/img/packed.png" height="70">
-															<p>Rs 100</p>
-															<p>Case of 4</p>
+		                                <div class="row" class="individual">
+																			<div class="col-sm-12">
+		                                    	<h5 class="info-text"> Let's start with the basic details</h5>
+		                            		</div>
+		                                	<div class="col-sm-5 col-sm-offset-1">
+		                                    	<div class="form-group">
+		                                        	<label> Shop Name</label>
+		                                        	<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Where is your Name?">
+		                                    	</div>
+		                                	</div>
+		                                	<div class="col-sm-5">
+																				<div class="form-group">
+																						<label>Address</label>
+																						<textarea type="text" class="form-control" id="exampleInputEmail1" placeholder="Where is your place located?"></textarea>
+																				</div>
+		                                	</div>
+																			<br/>
+		                                	<div class="col-sm-5 col-sm-offset-1">
+		                                    	<div class="form-group">
+		                                        	<label>Pincode</label>
+		                                        	<input type="number" class="form-control" id="exampleInputEmail1" placeholder="Pincode">
+		                                    	</div>
+		                                	</div>
+		                                	<div class="col-sm-5">
+		                                    	<div class="form-group">
+		                                        	<label>Phone number</label>
+		                                        	<div class="input-group">
+		                                            	<input type="number" class="form-control" placeholder="+91-12345678" >
+
+		                                        	</div>
+		                                    	</div>
+		                                	</div>
+																			<div class="col-sm-5 col-sm-offset-1">
+																					<div class="form-group">
+																							<label>Email ID</label>
+<input type="email" class="form-control" id="exampleInputEmail1" placeholder="email">
+																					</div>
+																			</div>
+																			<div class="col-sm-5">
+		                                    	<div class="form-group">
+		                                        	<label>Number of Cocofresh</label>
+		                                        	<div class="input-group">
+		                                            	<input type="range" name="points" min="0" max="10">
+
+		                                        	</div>
+		                                    	</div>
+		                                	</div>
+																			<!-- <div class="col-sm-8 col-sm-offset-2">
+																				<div class="col-sm-4 col-sm-offset-2">
+																				</div>
+																				<div class="col-sm-4"></div>
+																					<div class="col-sm-4 col-sm-offset-2"></div>
+																						<div class="col-sm-4"></div>
+																			</div> -->
+		                                    <!-- <div class="col-sm-8 col-sm-offset-2" class="individual">
+		                                        <div class="col-sm-4 col-sm-offset-2" class="individual">
+													<div class="choice" data-toggle="wizard-checkbox" class="individual">
+		                                                <input type="checkbox" name="jobb" value="Design" class="individual">
+		                                                <div class="card card-checkboxes card-hover-effect" class="individual">
+		                                                    <i class="ti-home"></i>
+																												<img src="http://naturebowl.in/img/packed.png" height="70" class="individual">
+															<p class="individual">Rs 100</p>
+															<p class="individual">Case of 4</p>
 
 		                                                </div>
 		                                            </div>
 		                                        </div>
-		                                        <div class="col-sm-4">
-													<div class="choice" data-toggle="wizard-checkbox">
-		                                                <input type="checkbox" name="jobb" value="Design">
-		                                                <div class="card card-checkboxes card-hover-effect">
-																											<img src="http://naturebowl.in/img/packed.png" height="70">
-																											<p>Rs 150</p>
-																											<p>Case of 6</p>
+		                                        <div class="col-sm-4" class="individual">
+													<div class="choice" data-toggle="wizard-checkbox" class="individual">
+		                                                <input type="checkbox" name="jobb" value="Design" class="individual">
+		                                                <div class="card card-checkboxes card-hover-effect" class="individual">
+																											<img src="http://naturebowl.in/img/packed.png" height="70" class="individual">
+																											<p class="individual">Rs 150</p>
+																											<p class="individual">Case of 6</p>
 		                                                </div>
 		                                            </div>
 		                                        </div>
-																						<div class="col-sm-4 col-sm-offset-2">
-													<div class="choice" data-toggle="wizard-checkbox">
-																										<input type="checkbox" name="jobb" value="Design">
-																										<div class="card card-checkboxes card-hover-effect">
-																												<!-- <i class="ti-home"></i> -->
-																												<img src="http://naturebowl.in/img/packed.png" height="70">
-																												<p>Rs 200 </p>
-																												<p>Case of 9</p>
+																						<div class="col-sm-4 col-sm-offset-2" class="individual">
+													<div class="choice" data-toggle="wizard-checkbox" class="individual">
+																										<input type="checkbox" name="jobb" value="Design" class="individual">
+																										<div class="card card-checkboxes card-hover-effect" class="individual">
+																												<i class="ti-home"></i>
+																												<img src="http://naturebowl.in/img/packed.png" height="70" class="individual">
+																												<p class="individual">Rs 200 </p>
+																												<p class="individual">Case of 9</p>
 
 																										</div>
 																								</div>
 																						</div>
-																						<div class="col-sm-4">
-													<div class="choice" data-toggle="wizard-checkbox">
-																										<input type="checkbox" name="jobb" value="Design">
-																										<div class="card card-checkboxes card-hover-effect">
-																												<!-- <i class="ti-home"></i> -->
-																												<img src="http://naturebowl.in/img/packed.png" height="70">
-																												<p>xyz</p>
-																												<p>Bulk order</p>
+																						<div class="col-sm-4" class="individual">
+													<div class="choice" data-toggle="wizard-checkbox" class="individual">
+																										<input type="checkbox" name="jobb" value="Design" class="individual">
+																										<div class="card card-checkboxes card-hover-effect" class="individual">
+																												<i class="ti-home"></i>
+																												<img src="http://naturebowl.in/img/packed.png" height="70" class="individual">
+																												<p class="individual">xyz</p>
+																												<p class="individual">Bulk order</p>
 
 																										</div>
 																								</div>
 																						</div>
-		                                    </div>
+		                                    </div> -->
 		                                </div>
 		                            </div>
 		                            <div class="tab-pane" id="facilities">
@@ -257,7 +390,7 @@
 		                        <div class="wizard-footer">
 	                            	<div class="pull-right">
 	                                    <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Next' />
-	                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finish' />
+	                                    <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finish' />
 									</div>
 
 	                                <div class="pull-left">
@@ -295,5 +428,6 @@
 <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 	<script type="text/javascript">
 	    $(".form_datetime").datetimepicker({format: 'dd-mm-yyyy hh:ii'});
+
 	</script>
 </html>
