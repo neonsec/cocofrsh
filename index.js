@@ -6,6 +6,6 @@ app.get('/',(req,res)=>{
 res.send(__dirname+'/public/index.html');
 })
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
   console.log('server started')
 })
