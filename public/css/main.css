@@ -1,0 +1,99 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+   #navbar-primary .navbar-nav {
+     width: 100%;
+     text-align: center;
+   }
+   #navbar-primary .navbar-nav > li {
+     display: inline-block;
+     float: none;
+   }
+   #navbar-primary .navbar-nav > li > a {
+     padding-left: 30px;
+     padding-right: 30px;
+   }
+
+
+.navs{
+  color: green;
+  font-family: 'Kavoon', cursive;
+  font-size: 25px;
+  border-radius: 50px;
+}
+
+.navs:hover, .navs:focus{
+    color: green;
+}
+
+.nav-logo {
+    border-radius: 50px;
+
+}
+
+button.navbar-toggle {
+    background-color: green;
+}
+span.icon-bar {
+    background-color: white;
+}
+
+.icons{
+  color: green;
+  font-size: 72px;
+}
+
+.sub-head{
+  color: green;
+
+}
+/*.table-right{
+  border-color: 2px solid rgba(255, 0, 0, 0.5);
+}*/
+
+
+.btn-action{
+  font-family: Open Sans;
+    background-color: #1eb858;
+    border: 1px solid #1eb858;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 10px 21px;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+}
+
+.pricing-section .table-left, .pricing-section .table-right {
+    padding: 20px 20px 50px 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 80px 0px rgba(0,0,0,.1);
+    border: transparent;
+    max-width: 400px;
+}
+
+
+.social-icons:hover{
+  color: green;
+}
+
+i{
+  color: green;
+}
